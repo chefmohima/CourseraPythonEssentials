@@ -1,0 +1,46 @@
+1. What are docstrings?
+Documentation strings which is compiled with code. Appears as the first string literal in a module/class/method definition.
+Can be accessed with either:
+-> help(object)
+-> object.__doc__
+
+2. What should docstrings contain?
+Modules: Docstrings should tell about the classes, functions and exceptions
+Classes: Docstrings should inform about methods and variables
+Methods : Docstrings should inform about what the method is doing, paramaeters and return type
+Standalone scripts: Docstrings should be like the usage and command line arguments
+
+3. Syntax Error: syntax defines structure. If there is some structural irregularity, ex: missing quotes, wrong indentation etc. the
+program will nto compile. These are syntax errors.
+Examples:
+
+-> print 'hello'    # bad input as print requires paratheses
+
+-> print("Hello world!)   # bad token, mismatched quotes
+
+-> def say_hello():
+   print("Hello world!")    # bad input, nodef do_some_math(num1, num2):
+   
+-> def do_some_math(num1, num2):
+    value = num1 + num2
+return value                      # return outside function
+
+-> 10 = x     # cant assign to literal, variable on the right side of assignment operator
+
+-> def say_hello()
+      print("Hello world!")     # bad input, missed punctuation ":" after method declaration
+      
+4. Runtime Errors
+
+-> NameError: variable name is not defined/ function name is not defined
+-> TypeError: trying to perform an action on a variable that its type does not support example: 
+              - concatentating string and int
+              - casting a string to int
+              - function_name() takes exactly x arguments (y given): passing the wrong number of args
+              - int object is not iterable: iterating over something which is not a sequence
+              
+-> IndexError: trying to access an index that is out of bound
+-> TokenError: mostly gfor mismatched quotes/brackets
+
+
+
