@@ -43,4 +43,18 @@ return value                      # return outside function
 -> TokenError: mostly gfor mismatched quotes/brackets
 
 
+5. Reading from file
+fileHandle.read() - > reads entire file into a string
+fileHandle.readlines() - > reads entire file into a list where each item is a line. Not efficient for large files
+to read large files : iterate over the fileHandle instead of the list: ex: for line in fileHandle.read()
+
+6. Writing to a file.
+Opening a file with 'w' mode will:
+- create the file if it does not exist
+- erase all content and write to the file if the file already exists
+- use the 'a' mode to append to existing content in a file.
+
+
+
+
 
