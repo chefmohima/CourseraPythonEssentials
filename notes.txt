@@ -55,6 +55,65 @@ Opening a file with 'w' mode will:
 - use the 'a' mode to append to existing content in a file.
 
 
+DICTIONARIES
+
+1. Key-value pairs, values can change but keys cannot
+# create empty dictionary 
+empty_dict1 = {}
+OR
+empty_dict = dict()
+
+# build a dict from a list of tuples
+data = [(1, 'one'), (2, 'two'), (3, 'three')]      # list of tuples
+dict_data = dict(data)   
+# returns a dictionary: {1: 'one', 2: 'two', 3: 'three'}
+
+2. How to query the value of a key, ex we want to know the value associated with the key = "k"
+-> d[k] will return the value iff the key k exists in the dictionary and a KEyError otherwise
+-> d.get(k) will return the value iff k exists in the dcitionary else it returns None( but No error)
+-> d.get(k, z): if key is not present, then return the value z. Second argument of the get method is optional.
+
+
+3. Updating key values
+
+d
+Out[12]: {1: 'one', 2: 'two', 3: 'three'}
+
+d[1] = "ONE"                              # key exists in the dict
+// {1: 'ONE', 2: 'two', 3: 'three'}
+
+4. Update when key does not exist:
+
+d
+Out[14]: {1: 'ONE', 2: 'two', 3: 'three'}
+
+d[4] = "FOUR"              # the key 4 does not exist so a new key will be added
+
+d
+Out[17]: {1: 'ONE', 2: 'two', 3: 'three', 4: 'FOUR'}
+
+
+#  Check if keys exist in dictionary
+iterating over a dictionary is equivalent to iterating over its keys
+Example:
+d = {1:'a', 2:'b', 3:'c'}
+1 in d
+Out[3]: True
+
+ Strings, numbers, and tuples work as keys, and any type can be a value. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
